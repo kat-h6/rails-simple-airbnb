@@ -1,0 +1,17 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= @flat.url %>);"></div>
+<div class="flat-details">
+  <div class="list-flat-details">
+    <h1><%= @flat.name %></h1>
+    <p><%= @flat.address %></p>
+  </div>
+  <div class="list-flat-details">
+    <h3>A bit more about this flat...</h3>
+    <p><%= @flat.description %></p>
+  </div>
+  <div class="list-flat-details">
+    <h3>Details</h3>
+    <div class="icons">
+        <p class="icon-items"><i class="fas fa-user"></i><%= @flat.number_of_guests %></p>
+        <p class="icon-items"><i class="fas fa-euro-sign"></i><%= @flat.price_per_night %></p>
+    </div>
+</div>

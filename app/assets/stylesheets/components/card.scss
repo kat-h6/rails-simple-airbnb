@@ -1,0 +1,33 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#card-flat {
+  background: #eeeeee;
+  overflow: hidden;
+  height: 350px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 16px 16px;
+}
+
+#card-flat img {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon-items {
+  margin-right: 8px;
+}
+
+.card-links {
+  background: white;
+}
