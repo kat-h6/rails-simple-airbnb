@@ -1,12 +1,12 @@
-.card-container {
-  display: flex;
-  justify-content: space-between;
-}
+// .card-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 #card-flat {
   background: #eeeeee;
   overflow: hidden;
-  height: 350px;
+  height: 380px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin: 16px 16px;
 }
@@ -19,6 +19,10 @@
   padding-left: 0;
 }
 
+.card-flat-info {
+  padding: 16px;
+}
+
 .icons {
   display: flex;
   justify-content: flex-start;
@@ -29,5 +33,21 @@
 }
 
 .card-links {
+  padding: 16px 24px;
   background: white;
+  display:flex;
+  justify-content: space-between;
+}
+
+.card-links a {
+  color: #e1701a;
+  text-decoration: none;
+}
+
+.row .col:first-child {
+  padding-left: 0;
+}
+
+.row .col:last-child {
+  padding-right: 0;
 }

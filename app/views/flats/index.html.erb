@@ -1,9 +1,13 @@
 <div class="container">
-  <h1>All Our Flats (<%= @flats.length %>)</h1>
-  <div class="card-container">
-    <div class="row">
-      <% @flats.each do |flat| %>
-        <div class="col-3" id="card-flat">
+  <div class="row">
+    <div class="col-12">
+      <h1>All Our Flats (<%= @flats.length %>)</h1>
+    </div>
+  </div>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-3" id="card-flat">
+        <div class="row">
           <img src=<%= flat.url %>>
           <div class="card-flat-info">
             <h3><%= flat.name %></h3>
@@ -11,13 +15,14 @@
               <p class="icon-items"><i class="fas fa-user"></i><%= flat.number_of_guests %></p>
               <p class="icon-items"><i class="fas fa-euro-sign"></i><%= flat.price_per_night %></p>
             </div>
-            <div class="card-links">
-              <%= link_to "more info", flat_path(flat), class: "flat-link" %>
-              <%= link_to "edit", edit_flat_path(flat), class: "flat-link" %>
-              <%= link_to "remove", flat_path(flat), method: :delete, data: { confirm: 'Are you sure you want to delete this flat?' } %>
-            </div>
+          </div>
+          <div class="card-links">
+            <%= link_to "more info", flat_path(flat), class: "flat-link" %>
+            <%= link_to "edit", edit_flat_path(flat), class: "flat-link" %>
+            <%= link_to "remove", flat_path(flat), method: :delete, data: { confirm: 'Are you sure you want to delete this flat?' } %>
           </div>
         </div>
+      </div>
     <% end %>
   </div>
 </div>
