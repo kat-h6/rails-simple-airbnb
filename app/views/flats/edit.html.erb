@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 m-auto">
+      <h1>Edit flat</h1>
+      <div class="flat-form">
+        <%= render 'form', flat: @flat %>
+      </div>
+      <%= link_to 'back', flats_path %> |
+      <%= link_to 'show', @flat %>
+    </div>
+  </div>
+</div>
