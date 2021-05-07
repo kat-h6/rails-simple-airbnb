@@ -5,15 +5,36 @@
 }
 
 .list-flat-details {
-  height: 120px;
-  background: #bbbbbb;
+  height: 140px;
   margin-bottom: 16px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-  width: 800px;
+  background: #bbbbbb;
   padding: 4px 8px;
 }
 
 .flat-details {
+  margin-right: 48px;
+  margin-left: 48px;
   margin-top: -75px;
-  margin-left: 24px;
+}
+
+.flat-book-card {
+  background: #F8F9FA;
+  padding: 24px 32px;
+  width: 25%;
+  margin-right: 24px;
+  margin-top: -75px;
+  height: 400px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+.my-container {
+  margin-top: -75px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.submit-btn {
+  background: #e1701a;
+  margin-top: 24px;
 }
