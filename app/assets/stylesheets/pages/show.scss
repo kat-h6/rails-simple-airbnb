@@ -4,22 +4,23 @@
   height: 500px;
 }
 
-.list-flat-details {
-  height: 140px;
-  margin-bottom: 16px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-  background: #bbbbbb;
-  padding: 4px 8px;
-}
-
 .flat-details {
   margin-right: 48px;
   margin-left: 48px;
   margin-top: -75px;
 }
 
+.list-flat-details {
+  height: 140px;
+  margin-bottom: 16px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  background: #bbbbbb;
+  padding: 4px 8px;
+  color: black;
+}
+
 .flat-book-card {
-  background: #F8F9FA;
+  background: $light-gray;
   padding: 24px 32px;
   width: 25%;
   margin-right: 24px;
@@ -35,6 +36,5 @@
 }
 
 .submit-btn {
-  background: #e1701a;
   margin-top: 24px;
 }
